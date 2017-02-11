@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApplication5.Day5_SecF2</StartupObject>
+    <StartupObject>ConsoleApplication5.Day5_SecI2</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,11 @@
     <Compile Include="Day5-SecF1.cs" />
     <Compile Include="Day5-SecF2.cs" />
     <Compile Include="Day5-SecH1.cs" />
+    <Compile Include="Day5-SecH2.cs" />
+    <Compile Include="Day5-SecH3.cs" />
+    <Compile Include="Day5-SecH4.cs" />
+    <Compile Include="Day5-SecI1.cs" />
+    <Compile Include="Day5-SecI2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
