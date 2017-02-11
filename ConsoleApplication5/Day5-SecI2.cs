@@ -22,7 +22,7 @@ namespace ConsoleApplication5
             Random r = new Random();
             for (int w = 0; w <= b.Length -1; w++) 
             {
-                b[w] = r.Next(0, 10);
+                b[w] = r.Next(-5, 6);//if change Random nums from -5~5
             }
 
             int[] num = new int[10];// create an array of counts
@@ -39,15 +39,30 @@ namespace ConsoleApplication5
             //Console.WriteLine(String.Join(" ", a));
             //Console.WriteLine(String.Join(" ", b));
             //Console.WriteLine(String.Join(" ", num));
-
+            
+            
+            //print 2 lists
             Console.WriteLine("Number\tCount");
             for (int j=0; j<=a.Length - 1; j++)
             {
                 Console.WriteLine("  {0}\t  {1}", a[j], num[j]);
             }
 
-       
-            
+
+            //print histogram
+            Console.WriteLine("Number");
+            for (int j = 0; j <= a.Length - 1; j++)
+            {
+                Console.Write("  {0}  ", a[j]);
+                for (int u = 0; u <=num[j]; u++)
+                {
+                    if (u < num[j])
+                        Console.Write("*");
+                    else
+                        Console.WriteLine("*");//the last * must be WL
+                }
+            }
+
         }
     }
 }
